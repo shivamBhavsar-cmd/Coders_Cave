@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stle.css">
+    <link rel="stylesheet" href="kk.jpeg">
+    <title>Pdf To Word</title>
+
+</head>
+<body>
+    
+    <div class="main-container">
+        <div class="l-cont">
+            <div>
+                <h1 class="lc-head">Convert <span>Pdf</span> file to <br> <span>Word</span> file</h1>
+            </div>
+        </div>
+        <div class="r-cont">
+            <div class="upload">
+                <div class="select-file">
+                    <input type="file" id="pdfFile" accept=".pdf">
+                </div>
+                <img src="kk.jpeg" alt="" class="up-img">
+                <button class="up-btn" onclick="convertPdfToWord()" id="up_btn" >
+                    <span id="upload-txt">
+                        Convert
+                    </span>
+                    <span id="done-txt">
+                        Done
+                    </span>
+                </button>
+                <a id="downloadLink" style="display: none;"></a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.9.359/pdf.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
